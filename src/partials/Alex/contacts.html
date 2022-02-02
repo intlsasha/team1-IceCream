@@ -1,5 +1,5 @@
 <section class="contacts">
-  <div class="container">
+  <div class="container contacts--container">
     <h2 class="contacts__title visually-hidden">Our Locations</h2>
     <ul class="contacts__list">
       <li class="contacts__item">
@@ -11,12 +11,12 @@
         <div class="hours">
           <ul class="hours__list">
             <li class="hours__item">
-              <span>Monday - Friday</span>
-              <time>06:00 AM - 10:00 PM</time>
+              <span class="hours__days">Monday - Friday</span>
+              <time class="hours__time">06:00 AM - 10:00 PM</time>
             </li>
             <li class="hours__item">
-              <span class="days">Saturday - Sunday</span>
-              <time class="time">08:00 AM - 16:00 PM</time>
+              <span class="hours__days">Saturday - Sunday</span>
+              <time class="hours__time">08:00 AM - 16:00 PM</time>
             </li>
           </ul>
         </div>
@@ -27,19 +27,19 @@
       </li>
       <li class="contacts__item">
         <div class="info">
-          <span class="info__category">FOODTRUCK</span>
+          <span class="info__category info__category--green">FOODTRUCK</span>
           <span class="info__city">Los Angeles</span>
           <span class="info__descr">Fusce ut velit laoreet, tempus arcu molestie vulputate</span>
         </div>
         <div class="hours">
-          <ul>
-            <li>
-              <span>Monday - Friday</span>
-              <time>06:00 AM - 10:00 PM</time>
+          <ul class="hours__list">
+            <li class="hours__item">
+              <span class="hours__days">Monday - Friday</span>
+              <time class="hours__time">06:00 AM - 10:00 PM</time>
             </li>
-            <li>
-              <span>Saturday - Sunday</span>
-              <time>08:00 AM - 16:00 PM</time>
+            <li class="hours__item">
+              <span class="hours__days">Saturday - Sunday</span>
+              <time class="hours__time">08:00 AM - 16:00 PM</time>
             </li>
           </ul>
         </div>
@@ -55,14 +55,14 @@
           <span class="info__descr">Fusce ut velit laoreet, tempus arcu molestie vulputate</span>
         </div>
         <div class="hours">
-          <ul>
-            <li>
-              <span>Monday - Friday</span>
-              <time>06:00 AM - 10:00 PM</time>
+          <ul class="hours__list">
+            <li class="hours__item">
+              <span class="hours__days">Monday - Friday</span>
+              <time class="hours__time">06:00 AM - 10:00 PM</time>
             </li>
-            <li>
-              <span>Saturday - Sunday</span>
-              <time>08:00 AM - 16:00 PM</time>
+            <li class="hours__item">
+              <span class="hours__days">Saturday - Sunday</span>
+              <time class="hours__time">08:00 AM - 16:00 PM</time>
             </li>
           </ul>
         </div>
@@ -72,5 +72,9 @@
         </div>
       </li>
     </ul>
+    <div class="btn-centered">
+      <button class="btn-location" type="button">Our Locations</button>
+      <button class="btn-franchise" type="button">Franchise</button>
+    </div>
   </div>
 </section>
