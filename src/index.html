@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Заголовок страницы</title>
+    <link rel="shortcut icon" type="image/ico" href="./images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One:wght@400&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -14,7 +21,19 @@
   <body>
     
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    
+
+    <!-- <include src="./partials/example.html"></include> -->
+
+    <include src="./partials/Anna/header.html"></include>
+    <include src="./partials/Anna/menu.html"></include>
+    <include src="./partials/Sergei/hero.html"></include>
+    <include src="./partials/Rostislav/product.html"></include>
+    <include src="./partials/Dmitriy/about.html"></include>
+    <include src="./partials/Dmitriy/advantages.html"></include>
+    <include src="./partials/Oleg/gallery.html"></include>
+    <include src="./partials/Oleg/testimonials.html"></include>
+    <include src="./partials/Alex/contacts.html"></include>
+    <include src="./partials/Alex/footer.html"></include>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
