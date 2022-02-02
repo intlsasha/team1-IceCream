@@ -1,0 +1,36 @@
+.header-container {
+    @media screen and (min-width:1200px){
+        position: absolute;
+        top: 37px;
+        left: 46px;
+        z-index: 1;
+    }
+}
+
+.header-container {
+    padding: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-container__item_nav {
+    @media screen and (min-width:320px) and (max-width:1199px)  {
+        display: none;
+    }
+}
+
+.header-btn {
+    @media screen and (min-width:320px) and (max-width:767px){
+        display: none;
+    }
+
+}
+
+.menu-open {
+    @media screen and (min-width:1200px){
+        display: none;
+    }
+}
