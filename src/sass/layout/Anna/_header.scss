@@ -8,6 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: transparent;
     @media screen and (min-width:1200px){
         position: absolute;
         top: 37px;
@@ -32,13 +33,23 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    & .site-list__item:not(:last-of-type) {
+        margin-right: 35px;
+    }
 }
 
 .header-btn {
     @media screen and (min-width:320px) and (max-width:767px) {
         display: none;
     }
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    min-width: 159px;
+    background-color: #FFFFFF;
+    border-radius: 22px;
+    border: transparent;
 }
 
 .menu-open {
