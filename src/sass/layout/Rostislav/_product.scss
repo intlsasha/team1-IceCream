@@ -40,7 +40,7 @@
 }
 
 .container-cream {
-  width: calc(100% - 40px);
+  width: 280px;
   margin: 0 auto;
   text-align: center;
   padding-top: 161px;
@@ -48,10 +48,6 @@
   position: relative;
   border-radius: 24px;
   background: #ffb8ca;
-
-  @media screen and (min-width: 480px) {
-    width: 280px;
-  }
 
   @media screen and (max-width: 767px) {
     margin-bottom: 130px;
@@ -103,7 +99,7 @@
 }
 
 .container-coffe {
-  width: calc(100% - 40px);
+  width: 280px;
   margin: 0 auto;
   text-align: center;
   padding-top: 161px;
@@ -111,10 +107,6 @@
   position: relative;
   border-radius: 24px;
   background: #f0d1a5;
-
-  @media screen and (min-width: 480px) {
-    width: 280px;
-  }
 
   @media screen and (max-width: 767px) {
     margin-bottom: 130px;
@@ -166,7 +158,7 @@
 }
 
 .container-milkshakes {
-  width: calc(100% - 40px);
+  width: 280px;
   margin: 0 auto;
   text-align: center;
   padding-top: 161px;
@@ -174,10 +166,6 @@
   position: relative;
   background: #c2e297;
   border-radius: 24px;
-
-  @media screen and (min-width: 480px) {
-    width: 280px;
-  }
 
   @media screen and (min-width: 768px) {
     width: 220px;
