@@ -6,7 +6,7 @@
   padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: transparent;
 
@@ -27,7 +27,8 @@
   @media screen and (min-width: 1280px) {
     position: absolute;
     top: 37px;
-    left: 64px;
+    left: 7%;
+    right: 12%;
     z-index: 1;
   }
 }
