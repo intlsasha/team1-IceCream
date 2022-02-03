@@ -2,16 +2,77 @@
     position: sticky;
     right: 0;
     top: 0;
+    background-color: $bg-menu;
+    display: flex;
+    flex-direction: column;
     @media screen and(min-width:320px) and (max-width: 479px) {
         width: 250px;
         height: 100%;
+        padding-top: 60px ;
     }
     @media screen and(min-width:480px) and (max-width: 1279px){
         width: 254px;
         height: 100%;
+        padding-top: 60px;
     }
 }
 
 .menu-close {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: transparent;
+    width: 14px;
+    @media screen and(min-width:320px) and (max-width: 479px) {
+        top: 23px;
+        right: 28px;
+    }
+    @media screen and(min-width:480px) and (max-width: 1279px) {
+        top: 23px;
+        right: 34px;
+    }
+}
+
+
+.menu-btn {
+    @media screen and(min-width:320px) and (max-width: 479px){
+    margin:0 34px 19px;
+    }
+    @media screen and(min-width:480px) and (max-width: 1279px) {
+    margin:0 34px 19px;
+    }
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding-left: 0;
+    & .menu-list__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 42px;
+        border: $menu-border;
+        margin: 0;
+        @media screen and(min-width:320px) and (max-width: 479px){
+            padding-left: 21px;
+        }
+        @media screen and(min-width:480px) and (max-width: 1279px) {
+            padding-left: 24px;
+        }
+        & .menu-list__link {
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1.28;
+            color: $txt-white;
+            &:hover,
+            &:focus{
+                color:$primary-color;
+            }
+        }
+    }
 }
