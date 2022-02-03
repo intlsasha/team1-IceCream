@@ -1,7 +1,7 @@
 .products {
   padding-top: 121px;
   padding-bottom: 98px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 127px;
     padding-bottom: 117px;
   }
@@ -16,7 +16,7 @@
   text-transform: uppercase;
   margin-bottom: 15px;
   color: #ffa5ba;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 30px;
   }
 }
@@ -31,10 +31,10 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 48px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 58px;
   }
 }
@@ -51,9 +51,10 @@
     height: 485px;
     width: 220px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     height: 525px;
     width: 329px;
+    padding-top: 220px;
   }
 }
 .container-cream::before {
@@ -73,10 +74,10 @@
     width: 220px;
     height: 223px;
     background-image: url(../images/product/product-icecream-tab.png);
-    background-size: cover;
+    background-size: contain;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/product/product-icecream-tab@2x.png);
-      background-size: cover;
+      background-size: contain;
     }
   }
   @media screen and (min-width: 1280px) {
@@ -103,9 +104,10 @@
     height: 485px;
     width: 220px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     height: 525px;
     width: 329px;
+    padding-top: 220px;
   }
 }
 .container-coffe::before {
@@ -125,15 +127,15 @@
     width: 220px;
     height: 223px;
     background-image: url(../images/product/product-coffee-tab.png);
-    background-size: cover;
+    background-size: contain;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/product/product-coffee-tab@2x.png);
-      background-size: cover;
+      background-size: contain;
     }
   }
   @media screen and (min-width: 1280px) {
     width: 335px;
-    height: 355px;
+    height: 335px;
     background-image: url(../images/product/product-coffee-desk.png);
     background-size: cover;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -155,9 +157,10 @@
     height: 485px;
     width: 220px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     height: 525px;
     width: 329px;
+    padding-top: 220px;
   }
 }
 .container-milkshakes::before {
@@ -185,7 +188,7 @@
   }
   @media screen and (min-width: 1280px) {
     width: 335px;
-    height: 355px;
+    height: 335px;
     background-image: url(../images/product/product-shake-desk.png);
     background-size: cover;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -236,6 +239,7 @@
   height: 40px;
   background-color: #fff;
   border-radius: 50%;
+  border: none;
 }
 
 .product-icon {
@@ -249,8 +253,14 @@
 }
 
 .container-ice > li:not(:last-child) {
-  margin-right: 20px;
+  @media screen and (min-width: 768px) {
+    margin-right: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 24px;
+  }
 }
+
 .container-ice {
   @media screen and (min-width: 768px) {
     display: flex;
