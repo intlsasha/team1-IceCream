@@ -48,7 +48,7 @@
   color: $primary-color;
   border-color: transparent;
   margin: 0;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms ease-in-out;
   &:hover {
     box-shadow: 0px 8px 30px rgb(212 20 67 / 30%);
     background-color: #ecebeb;
@@ -77,9 +77,9 @@
     padding-top: 125px;
     padding-bottom: 39px;
     background-image: url('../images/about/about-bg-desk.png');
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position-y: 90%;
+    background-position-y: 100%;
   }
   .milk-before-title {
     font-size: 18px;
@@ -157,9 +157,10 @@
 @media screen and (min-width: 1280px) {
   .cow {
     background-image: url('../images/about/about-bg-desk.png');
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position-y: 150%;
+    background-position-y: 100%;
+
     &-photo {
       margin-right: 74px;
     }
