@@ -1,15 +1,15 @@
 
 .section-reviews{
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+padding-bottom: 128px;
+padding-top: 80px;
     @media screen and (min-width: 768px) {
-        padding-left: 74px;
-        padding-right: 74px;
+padding-bottom: 166px;
+padding-top: 121px;
     }
     @media screen and (min-width: 1280px) {
-        padding-left: 229px;
-        padding-right: 229px;
+        padding-top: 123px;
+        padding-bottom: 179px;
     }
 }
 
@@ -17,20 +17,22 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 2.55;
-    margin-bottom: 52px;
-    margin-top: 29px;
     color: $txt-black;
     position: relative;
+    width: 157px;
     z-index: 3;
+    margin: 0;
     background-image: repeating-linear-gradient(to top, #E1E1E1 0px 1px, transparent 1px 31px);
     @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 2.16;
         letter-spacing: 0.04em; 
+        width: 460px;
     }
     @media screen and (min-width: 1280px) {
         font-size: 16px;
         line-height: 1.86;
+        width: 750px;
     }
 }
 .section-reviews__text-info{
@@ -38,7 +40,6 @@
     font-size: 14px;
     line-height: 1.86;
     color: $txt-black;
-    padding-bottom: 128px;
     @media screen and (min-width: 768px) {
         font-size: 16px;
     }
@@ -60,10 +61,29 @@ background-image: url(../images/quotation-mark.svg);
     width: 54px;
     height: 40px;
     z-index: 1;
-    left: 70px;
-    top: 55px;
+    left: 61px;
+    top: 28px;
+    @media screen and (min-width: 768px) {
+        left: 41px;
+        top: 30px;
+    }
+    @media screen and (min-width: 1280px) {
+        left: 58px;
+        top: 30px;
+    }
    }
    .section-reviews__wrap{
+ 
     padding: 43px 66px 26px 57px;
     position: relative;
+    margin-top: 15px;
+    @media screen and (min-width: 768px){
+        padding: 47px 80px 34px 80px;
+        margin-left: 5%;
+    }
+    @media screen and (min-width: 1280px){
+        padding: 47px 88px 39px 88px;
+        margin-left: 5%;
+    }
    }
+  
