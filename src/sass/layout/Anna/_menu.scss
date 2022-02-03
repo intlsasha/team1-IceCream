@@ -8,8 +8,8 @@
     z-index: 10;
     overflow: auto;
     transform: translateX(0);
-    animation-delay: 0.5s;
-    transition:translate 250ms ease-in-out;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and(min-width:320px) and (max-width: 479px) {
         width: 250px;
         height: 100vh;
@@ -66,6 +66,8 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   background:url(../images/button-icon-pink.svg) no-repeat 130px 18px;
   &:focus,
   &:hover {
@@ -116,6 +118,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            transition-duration: 250ms;
+            transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
             &:hover,
             &:focus{
                 color:$primary-color;
