@@ -1,3 +1,8 @@
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .cow {
   background-color: $bg-pink-light;
 }
@@ -53,25 +58,7 @@
     box-shadow: 0px 8px 30px rgb(212 20 67 / 30%);
     background-color: #ecebeb;
   }
-}
-.cow-button {
-  width: 10px;
-  height: 10px;
-  fill: $primary-color;
-}
-@media screen and (max-width: 768px) {
-  .tab {
-    display: none;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .desk {
-    display: none;
-  }
-}
-@media screen and (min-width: 320px) {
-  .cow-photo {
-    margin-bottom: 46px;
+  .photo-cow {
   }
   .cow {
     padding-top: 125px;
@@ -105,8 +92,15 @@
     margin-bottom: 17px;
   }
 }
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+  .milk-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 320px) {
   .cow-photo {
     margin: 0;
     margin-right: 17px;
@@ -114,8 +108,45 @@
   .cow {
     background-image: none;
   }
-  .tab {
-    width: 340px;
+  .cow {
+    padding-top: 130px;
+    padding-bottom: 66px;
+  }
+  .milk-text {
+    width: 220px;
+    margin-top: 50px;
+  }
+  .milk-before-title {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 16px;
+  }
+  .milk-title {
+    font-size: 34px;
+    line-height: 39px;
+    margin-bottom: 50px;
+  }
+  .first-of-article {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    margin: 0;
+    margin-bottom: 49px;
+  }
+  .second-of-article {
+    font-size: 12px;
+    line-height: 162%;
+    margin: 0;
+    margin-bottom: 62px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .photo-cow {
+    margin: 0;
+    margin-right: 17px;
+  }
+  .cow {
+    background-image: none;
   }
   .mobile {
     display: none;
@@ -128,6 +159,7 @@
     padding-bottom: 66px;
   }
   .milk-text {
+    width: 340px;
     margin-top: 50px;
   }
   .milk-before-title {
@@ -160,13 +192,9 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: 100%;
-
-    &-photo {
-      margin-right: 74px;
-    }
   }
-  .tab {
-    display: none;
+  .photo-cow {
+    margin-right: 74px;
   }
   .milk-text {
     width: 463px;
