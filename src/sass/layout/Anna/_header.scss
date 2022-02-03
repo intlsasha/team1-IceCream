@@ -124,6 +124,8 @@
   border: transparent;
   background-color: transparent;
   width: 30px;
+  transform: translateX(100px);
+  animation-delay: 0.5s;
   @media screen and (min-width: 1280px) {
     display: none;
   }
