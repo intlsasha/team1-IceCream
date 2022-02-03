@@ -3,7 +3,7 @@
   margin: 0 auto;
 
   @media screen and (min-width: 480px) {
-    min-width: none;
+    min-width: unset;
     width: 480px;
   }
 
