@@ -9,29 +9,31 @@
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  @media screen and (min-width: 1279px) {
-    position: absolute;
-    top: 37px;
-    left: -69px;
-    z-index: 1;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    position: absolute;
-    top: 37px;
-    z-index: 1;
-  }
-   @media screen and (min-width:320px) and (max-width:  768px) {
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     position: absolute;
     top: 6px;
     left: 20px;
     right: 20px;
     z-index: 1;
-   }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    position: absolute;
+    top: 37px;
+    z-index: 1;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: 37px;
+    left: 64px;
+    z-index: 1;
+  }
 }
 .header_position {
   width: 280px;
   margin: 0 auto;
-  position: relative;
   @media screen and (min-width: 768px) {
     width: 700px;
   }
@@ -40,7 +42,7 @@
     width: 1050px;
   }
 }
-.header-container__item_logo{
+.header-container__item_logo {
   margin: 0;
   padding: 0;
 }
@@ -71,19 +73,19 @@
   }
 }
 
-.site-list__item  .site-list__link{
-    white-space: pre;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    color: $txt-white;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      color: $primary-color;
-    }
+.site-list__item .site-list__link {
+  white-space: pre;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $txt-white;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
 }
 
 .header-container__item_btn {
@@ -109,13 +111,13 @@
   min-width: 159px;
   border-radius: 22px;
   border: transparent;
-  color:$primary-color;
+  color: $primary-color;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
   background: $txt-white url(../images/button-icon-pink.svg) no-repeat 130px 18px;
   transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover {
     background-color: $secondary-button-hover;
@@ -129,7 +131,6 @@
 .menu-open {
   border: transparent;
   background-color: transparent;
-  width: 30px;
   @media screen and (min-width: 1280px) {
     display: none;
   }
