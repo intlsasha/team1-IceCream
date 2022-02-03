@@ -8,6 +8,10 @@
     padding-top: 97px;
     padding-bottom: 28px;
   }
+  @media screen and (min-width: 1280px) {
+    padding-top: 209px;
+    padding-bottom: 45px;
+  }
 }
 
 .hero-container {
@@ -34,6 +38,11 @@
     line-height: 1.14;
     margin-bottom: 20px;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 25px;
+  }
 }
 
 .hero-title-accent {
@@ -43,6 +52,10 @@
   @media screen and (min-width: 768px) {
     font-size: 34px;
     line-height: 0.91;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 0.89;
   }
 }
 
@@ -67,6 +80,10 @@
   &:focus {
     background-color: #c7133e;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.28;
+  }
 }
 
 .hero-btn-made {
@@ -82,6 +99,10 @@
   &:hover,
   &:focus {
     background-color: $secondary-button-hover;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.28;
   }
 }
 
@@ -100,6 +121,12 @@
     width: 324px;
     height: 322px;
   }
+  @media screen and (min-width: 1280px) {
+    width: 538px;
+    height: 538px;
+    top: -157px;
+    right: 147px;
+  }
 }
 
 .hero-icecream {
@@ -111,9 +138,14 @@
     bottom: -45px;
     left: 70px;
   }
+  @media screen and (min-width: 1280px) {
+    bottom: -75px;
+    left: 120px;
+  }
 }
 
 // --------------------------------------------
+
 .hero-milk {
   display: none;
   @media screen and (min-width: 768px) {
@@ -123,9 +155,6 @@
   }
 }
 
-// .hero-milk-pic {
-// }
-
 .hero-btn-milk {
   border: 1px solid transparent;
   width: 18px;
@@ -133,6 +162,25 @@
   border-radius: 50%;
   background-color: $txt-white;
   margin-top: 7px;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.hero-icon-arrow-right {
+  fill: #d41443;
+  width: 8px;
+  height: 6px;
+  @media screen and (min-width: 1280px) {
+    width: 14px;
+    height: 12px;
+  }
 }
 
 .hero-text {
@@ -146,19 +194,124 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.42;
+    width: 200px;
+  }
 }
 
-.hero-btn-more {
+.hero-girl {
   display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    bottom: -28px;
+    right: 0;
+    z-index: 2;
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: -45px;
+    right: 0;
+  }
+}
+
+.Hero-number {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 2;
+  }
+}
+
+.hero-number-cafes {
+  font-family: Titan One;
+  font-size: 28px;
+  line-height: 1.14;
+  text-align: right;
+  letter-spacing: 0.04em;
+  color: #d41443;
+  position: relative;
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+}
+
+.hero-number-cafes::before {
+  content: '';
+  border-radius: 50%;
+  background-color: #ffffff;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: -8px;
+  top: -5px;
+  z-index: -1;
+  @media screen and (min-width: 1280px) {
+    width: 30px;
+    height: 30px;
+    right: -15px;
+    top: -8px;
+  }
 }
 
 .hero-cafes {
-  display: none;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  color: #ffffff;
+  margin-bottom: 13px;
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.28;
+    margin-bottom: 15px;
+  }
+}
+
+.hero-number-food-trucks {
+  font-family: Titan One;
+  font-size: 28px;
+  line-height: 1.14;
+  text-align: right;
+  letter-spacing: 0.04em;
+  color: #d41443;
+  position: relative;
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+}
+
+.hero-number-food-trucks::before {
+  content: '';
+  border-radius: 50%;
+  background-color: #ffffff;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: -8px;
+  top: -5px;
+  z-index: -1;
+  @media screen and (min-width: 1280px) {
+    width: 30px;
+    height: 30px;
+    right: -15px;
+    top: -8px;
+  }
 }
 
 .hero-food-trucks {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+  color: #ffffff;
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.28;
+  }
 }
