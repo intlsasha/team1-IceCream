@@ -1,13 +1,21 @@
 .hero {
-  padding-top: 137px;
+  padding-top: 193px;
   padding-bottom: 160px;
   background-color: $bg-pink-dark;
   z-index: 1;
   overflow: hidden;
+  @media screen and (min-width: 768px) {
+    padding-top: 97px;
+    padding-bottom: 28px;
+  }
 }
 
 .hero-container {
   position: relative;
+  padding-left: 20px;
+  @media screen and (min-width: 768px) {
+    padding-left: 0px;
+  }
 }
 
 .hero-title {
@@ -84,8 +92,14 @@
   height: 344px;
   background-color: #ffa5ba;
   top: -128px;
-  left: 16px;
+  right: -20%;
   z-index: 1;
+  @media screen and (min-width: 768px) {
+    top: -62px;
+    right: 102px;
+    width: 324px;
+    height: 322px;
+  }
 }
 
 .hero-icecream {
@@ -93,12 +107,45 @@
   bottom: -100px;
   left: 82px;
   z-index: 2;
+  @media screen and (min-width: 768px) {
+    bottom: -45px;
+    left: 70px;
+  }
 }
 
 // --------------------------------------------
+.hero-milk {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    margin-top: 19px;
+  }
+}
+
+// .hero-milk-pic {
+// }
+
+.hero-btn-milk {
+  border: 1px solid transparent;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: $txt-white;
+  margin-top: 7px;
+}
 
 .hero-text {
   display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    font-size: 8px;
+    line-height: 1.5;
+    color: $txt-white;
+    width: 114px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .hero-btn-more {
