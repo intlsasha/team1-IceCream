@@ -68,7 +68,7 @@
   line-height: 1.31;
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-  background:url(../images/button-icon-pink.svg) no-repeat 130px 18px;
+  background-image:url(../images/button-icon-pink.svg) no-repeat 130px 18px;
   &:focus,
   &:hover {
     background-color: $secondary-button-hover;
