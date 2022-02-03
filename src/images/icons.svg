@@ -3,6 +3,9 @@
 <symbol id="icon-Burger" viewBox="0 0 46 32">
 <path d="M0 2.295h45.714M0 16.010h45.714M0 29.724h45.714"></path>
 </symbol>
+<symbol id="icon-menu" viewBox="0 0 32 32">
+<path d="M6.4 11.734v-2.134h19.2v2.134h-19.2zM6.4 17.066h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.134h-19.2v2.134z"></path>
+</symbol>
 <symbol id="icon-close" viewBox="0 0 32 32">
 <path d="M2.521 2.001l26.97 28.010M2.001 29.49l28.010-26.97"></path>
 </symbol>

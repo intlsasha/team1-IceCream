@@ -1,4 +1,5 @@
 <header class="header">
+  <div class="header_position">
   <div class="container header-container">
     <div class="header-container__item_logo">
       <a class="logo" href="./index.html">
@@ -7,7 +8,7 @@
           <source srcset="../src/images/header/logo@2x.png 2x" sizes="199w" type="image/png" />
           <img
             src="../src/images/header/logo.png"
-            alt="руки печатают код для веб сайта"
+            alt="logo"
             width="199"
             height="50"
           />
@@ -30,12 +31,22 @@
       </nav>
     </div>
     <div class="header-container__item_btn">
-      <button class="menu-open">
-        <svg class="menu-open__icon" width="20" height="12">
-          <use href="../src/images/icons.svg#icon-Burger"></use>
-        </svg>
-      </button>
-      <button class="header-btn">Buy now</button>
+        <div>
+        <button class="menu-open" menu-open>
+          <svg class="menu-btn__icon" width="30" height="20" fill="#d41443">
+            <use href="../src/images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div>
+        <button class="header-btn">
+          Buy now
+          <svg class="header-btn__icon" width="8" height="16">
+            <use href="../src/images/icons.svg#button-icon"></use>
+          </svg>
+        </button>
+      </div>
     </div>
+  </div>
   </div>
 </header>
