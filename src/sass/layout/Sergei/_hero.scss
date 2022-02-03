@@ -2,6 +2,7 @@
   padding-top: 137px;
   padding-bottom: 160px;
   background-color: $bg-pink-dark;
+  position: relative;
 }
 
 .hero-title {
@@ -54,6 +55,12 @@
   &:focus {
     background-color: $secondary-button-hover;
   }
+}
+
+.hero-icecream {
+  position: absolute;
+  top: 92px;
+  left: 117px;
 }
 
 // --------------------------------------------
