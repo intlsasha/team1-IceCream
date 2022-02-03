@@ -100,7 +100,7 @@
   }
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding-left: 44px;
   height: 44px;
   min-width: 159px;
   background-color: $txt-white;
@@ -110,6 +110,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
+  background:url(../images/button-icon-pink.svg) no-repeat 130px 18px;
   &:focus,
   &:hover {
     background-color: $secondary-button-hover;
@@ -124,8 +125,6 @@
   border: transparent;
   background-color: transparent;
   width: 30px;
-  transform: translateX(100px);
-  animation-delay: 0.5s;
   @media screen and (min-width: 1280px) {
     display: none;
   }
