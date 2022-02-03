@@ -1,6 +1,10 @@
 .products {
   padding-top: 121px;
   padding-bottom: 98px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 127px;
+    padding-bottom: 117px;
+  }
 }
 
 .natural {
@@ -29,59 +33,126 @@
 }
 
 .container-cream {
-  background: #ffb8ca;
+  text-align: center;
+  padding-top: 161px;
+  padding-bottom: 61px;
+  position: relative;
   border-radius: 24px;
-  height: 485px;
   margin-bottom: 130px;
+  background: #ffb8ca;
   @media screen and (min-width: 768px) {
     height: 485px;
     width: 220px;
   }
   @media screen and (min-width: 1200px) {
-    height: 485px;
-    width: 220px;
+    height: 525px;
+    width: 329px;
   }
 }
 .container-cream::before {
-<<<<<<< Updated upstream
+  content: '';
+  width: 249px;
+  height: 252px;
   position: absolute;
   left: 50%;
-  top: -15%;
+  top: -25%;
   transform: translateX(-50%);
-  display: block;
   background-image: url(../images/product/product-icecream-mob.png);
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 226px;
+    background-image: url(../images/product/product-icecream-tab.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/product/product-icecream-tab@2x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    width: 335px;
+    height: 335px;
+    background-image: url(../images/product/product-icecream-desk.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/product/product-icecream-desk@2x.png);
+    }
+  }
 }
 
-=======
-  background-image: url(../images/product/product-icecream-mob.png);
-}
->>>>>>> Stashed changes
 .container-coffe {
-  background: #f0d1a5;
+  text-align: center;
+  padding-top: 161px;
+  padding-bottom: 61px;
+  position: relative;
   border-radius: 24px;
-  height: 485px;
   margin-bottom: 130px;
-  font-size: 58px;
+  background: #f0d1a5;
   @media screen and (min-width: 768px) {
     height: 485px;
     width: 220px;
   }
   @media screen and (min-width: 1200px) {
-    height: 485px;
-    width: 220px;
+    height: 525px;
+    width: 329px;
   }
 }
+.container-coffe::before {
+  content: '';
+  width: 249px;
+  height: 252px;
+  position: absolute;
+  left: 50%;
+  top: -25%;
+  transform: translateX(-50%);
+  background-image: url(../images/product/product-coffee-mob.png);
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 226px;
+    background-image: url(../images/product/product-coffee-tab.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/product/product-coffee-tab@2x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    width: 335px;
+    height: 355px;
+    background-image: url(../images/product/product-coffee-desk.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/product/product-coffee-desk@2x.png);
+    }
+  }
+}
+
 .container-milkshakes {
+  text-align: center;
+  padding-top: 161px;
+  padding-bottom: 61px;
+  position: relative;
   background: #c2e297;
   border-radius: 24px;
-  height: 485px;
+  //height: 485px;
   @media screen and (min-width: 768px) {
     height: 485px;
     width: 220px;
   }
   @media screen and (min-width: 1200px) {
-    height: 485px;
+    height: 525px;
+    width: 329px;
+  }
+}
+.container-milkshakes::before {
+  content: '';
+  width: 249px;
+  height: 252px;
+  position: absolute;
+  left: 50%;
+  top: -25%;
+  transform: translateX(-50%);
+  background-image: url(../images/product/product-shake-mob.png);
+  @media screen and (min-width: 768px) {
     width: 220px;
+    height: 226px;
+    background-image: url(../images/product/product-shake-tab.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/product/product-shake-tab@2x.png);
+    }
   }
 }
 
@@ -98,14 +169,10 @@
 
 .title {
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-
   padding: 0 40px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1, 5;
-
+  line-height: 1.52;
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
@@ -113,29 +180,42 @@
 
 .title::before {
   content: '';
-  position: absolute;
-  width: 6px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 26px;
   height: 6px;
   background-image: url(../images/dot.svg);
 }
 
 .product-btn {
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 
   width: 40px;
   height: 40px;
-  border: transparent;
   border-radius: 50%;
   background-color: #fff;
-  transform: scale(1);
 }
 
 .product-icon {
-  width: 100%;
-  height: 100%;
+  width: 40%;
+  height: 40%;
   fill: $primary-color;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+
+.container-ice > li:not(:last-child) {
+  margin-right: 20px;
+}
+.container-ice {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: center;
+  }
 }
