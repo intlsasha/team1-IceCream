@@ -35,6 +35,10 @@
   font-size: 8px;
   line-height: 1.25;
   color: $txt-white;
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
 }
 
 .hero-btn-made {
@@ -46,6 +50,10 @@
   font-size: 8px;
   line-height: 1.25;
   color: $primary-color;
+  &:hover,
+  &:focus {
+    background-color: $secondary-button-hover;
+  }
 }
 
 // --------------------------------------------
