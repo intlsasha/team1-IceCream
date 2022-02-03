@@ -43,6 +43,7 @@
   }
 }
 .container-cream::before {
+<<<<<<< Updated upstream
   position: absolute;
   left: 50%;
   top: -15%;
@@ -51,6 +52,10 @@
   background-image: url(../images/product/product-icecream-mob.png);
 }
 
+=======
+  background-image: url(../images/product/product-icecream-mob.png);
+}
+>>>>>>> Stashed changes
 .container-coffe {
   background: #f0d1a5;
   border-radius: 24px;
