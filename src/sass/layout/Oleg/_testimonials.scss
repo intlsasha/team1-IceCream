@@ -18,11 +18,11 @@
     font-size: 12px;
     line-height: 2.55;
     margin-bottom: 52px;
-
     margin-top: 29px;
-
     color: $txt-black;
     padding: 43px 66px 26px 57px;
+    position: relative;
+    z-index: 3;
     @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 2.16;
@@ -55,7 +55,9 @@
 .section-reviews__text-icon::before {
     content: "";
     position: absolute;
+
    }
 .section-reviews__text-icon{
 fill: #E1E1E1;
+z-index: 1;
 }
