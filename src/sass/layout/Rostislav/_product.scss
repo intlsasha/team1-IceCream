@@ -8,6 +8,7 @@
 }
 
 .natural {
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
   text-align: center;
@@ -20,6 +21,7 @@
 }
 
 .products-title {
+  font-weight: 400;
   font-size: 34px;
   line-height: 1.15;
   text-align: center;
@@ -27,6 +29,9 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+  }
   @media screen and (min-width: 1200px) {
     font-size: 58px;
   }
@@ -154,9 +159,18 @@
       background-image: url(../images/product/product-shake-tab@2x.png);
     }
   }
+  @media screen and (min-width: 1280px) {
+    width: 335px;
+    height: 355px;
+    background-image: url(../images/product/product-shake-desk.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/product/product-shake-desk@2x.png);
+    }
+  }
 }
 
 .ice-menu {
+  font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
 
@@ -193,7 +207,6 @@
 
   width: 40px;
   height: 40px;
-  border-radius: 50%;
   background-color: #fff;
 }
 
