@@ -20,9 +20,9 @@
     margin-bottom: 52px;
     margin-top: 29px;
     color: $txt-black;
-    padding: 43px 66px 26px 57px;
     position: relative;
     z-index: 3;
+    background-image: repeating-linear-gradient(to top, #E1E1E1 0px 1px, transparent 1px 31px);
     @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 2.16;
@@ -38,6 +38,7 @@
     font-size: 14px;
     line-height: 1.86;
     color: $txt-black;
+    padding-bottom: 128px;
     @media screen and (min-width: 768px) {
         font-size: 16px;
     }
@@ -52,12 +53,17 @@
     margin-left: auto;
     margin-right: auto;
 }
-.section-reviews__text-icon::before {
+.section-reviews__wrap::before {
     content: "";
     position: absolute;
-
+background-image: url(../images/quotation-mark.svg);
+    width: 54px;
+    height: 40px;
+    z-index: 1;
+    left: 70px;
+    top: 55px;
    }
-.section-reviews__text-icon{
-fill: #E1E1E1;
-z-index: 1;
-}
+   .section-reviews__wrap{
+    padding: 43px 66px 26px 57px;
+    position: relative;
+   }
