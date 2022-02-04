@@ -1,13 +1,10 @@
 .section-reviews {
   text-align: center;
   padding-bottom: 128px;
-  padding-top: 80px;
   @media screen and (min-width: 768px) {
     padding-bottom: 166px;
-    padding-top: 121px;
   }
   @media screen and (min-width: 1280px) {
-    padding-top: 123px;
     padding-bottom: 179px;
   }
 }
@@ -112,19 +109,7 @@
   border-radius: 0;
   background-color: transparent;
 }
-.section-reviews {
-  text-align: center;
-  padding-bottom: 128px;
-  padding-top: 80px;
-  @media screen and (min-width: 768px) {
-    padding-bottom: 166px;
-    padding-top: 121px;
-  }
-  @media screen and (min-width: 1280px) {
-    padding-top: 123px;
-    padding-bottom: 179px;
-  }
-}
+
 .section-reviews__text {
   font-weight: 500;
   font-size: 12px;
@@ -133,7 +118,7 @@
   position: relative;
   width: 157px;
   z-index: 3;
-  margin: 0;
+  margin: 0 auto;
   background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 31px);
   @media screen and (min-width: 768px) {
     font-size: 14px;
