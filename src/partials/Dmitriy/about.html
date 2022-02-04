@@ -1,36 +1,42 @@
-<section class="cow">
-    <div class="container">
-        <div class="milk-section">
-            <p class="milk-before-title">tradition and love</p>
-            <h2 class="milk-title">how it’s made?</h2>
-        </div>
-        <div class="milk-info">
-         <div>
-        <img srcset="./images/about/about-cow-mob.png 1x,./images/about/about-cow-mob@2x.png 2x" src="./images/about/about-cow-mob.png" alt="" class="mobile">
-        <img srcset="./images/about/about-cow-tab.png 1x,./images/about/about-cow-tab@2x.png 2x" src="./images/about/about-cow-tab.png" alt="" class="tab">
-        <img srcset="./images/about/about-cow-desk.png 1x,./images/about/about-cow-desk@2x.png 2x"
-        src="./images/about/about-cow-desk.png" alt="" class="desk">
+<section class="cow" id="about">
+  <div class="container">
+    <div class="milk-section">
+      <p class="milk-before-title">tradition and love</p>
+      <h2 class="milk-title">how it’s made?</h2>
     </div>
-
-            <div>
-            <article>
-                <p class="first-of-article">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
-                    cursus, faucibus lorem eget, egestas eros.
-                    Maecenas eleifend erat at justo fringilla.</p>
-                <p class="second-of-article">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-                    Mauris rhoncus orci in imperdiet placerat.
-                    Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-                    tincidunt.
-                    <br>
-                    <br>
-                    Aliquam erat volutpat. Aenean accumsan.
-                </p>
-            </article>
-            <button type="button" class="milk-button">Read more <svg class="cow-button">
-                <use href="./images/icons.svg#icon-arrow-right"></use>
-            </svg></button>
-            </div>
-        </div>
+    <div class="milk-info">
+      <picture class="photo-cow"
+        ><source
+          srcset="./images/about/about-cow-desk.png 1x, ./images/about/about-cow-desk@2x.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/about/about-cow-tab.png 1x, ./images/about/about-cow-tab@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/about/about-cow-mob.png 1x, ./images/about/about-cow-mob@2x.png 2x"
+          media="(min-width: 320px)"
+        />
+        <img src="./images/about/about-cow-mob.png" alt="cow" />
+      </picture>
+      <div>
+        <article class="milk-text">
+          <span class="first-of-article">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+            lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+          </span>
+          <span class="second-of-article">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
+            orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
+            urna maximus. Cras massa nibh, tincidunt.
+            <br />
+            <br />
+            Aliquam erat volutpat. Aenean accumsan.
+          </span>
+        </article>
+        <button type="button" class="milk-button">Read more</button>
+      </div>
     </div>
-
+  </div>
 </section>

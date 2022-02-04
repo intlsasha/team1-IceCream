@@ -1,41 +1,48 @@
 <header class="header">
-  <div class="container header-container">
-    <div class="header-container__item_logo">
-      <a class="logo" href="./index.html">
-        <picture class="logo__img">
-          <source srcset="../src/images/header/logo.png 1x" sizes="199w" type="image/png" />
-          <source srcset="../src/images/header/logo@2x.png 2x" sizes="199w" type="image/png" />
-          <img
-            src="../src/images/header/logo.png"
-            alt="руки печатают код для веб сайта"
-            width="199"
-            height="50"
-          />
-        </picture>
-      </a>
-    </div>
-    <div class="header-container__item_nav">
-      <nav class="site-nav">
-        <ul class="site-list">
-          <li class="site-list__item"><a class="site-list__link" href="./index.html">Home</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#hero">About us</a></li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#about">How it's made</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#advantages">Our products</a>
-          </li>
-          <li class="site-list__item"><a class="site-list__link" href="#contacts">Contacts</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header-container__item_btn">
-      <button class="menu-open">
-        <svg class="menu-open__icon" width="20" height="12">
-          <use href="../src/images/icons.svg#icon-Burger"></use>
-        </svg>
-      </button>
-      <button class="header-btn">Buy now</button>
+  <div class="header_position">
+    <div class="container header-container">
+      <div class="header-container__item_logo">
+        <a class="logo" href="./index.html">
+          <picture class="logo__img">
+            <source srcset="../src/images/header/logo.png 1x" type="image/png" />
+            <source srcset="../src/images/header/logo@2x.png 2x" type="image/png" />
+            <img src="../src/images/header/logo.png" alt="logo" width="199" height="50" />
+          </picture>
+        </a>
+      </div>
+      <div class="header-container__item_nav">
+        <nav class="site-nav">
+          <ul class="site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="./index.html">Home</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#gallery">About us</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#about">How it's made</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#products">Our products</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-container__item_btn">
+        <div class="menu-open_box">
+          <button class="menu-open" data-menu-open>
+            <svg class="menu-btn__icon" width="30" height="22" fill="#d41443">
+              <use href="../src/images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <button class="header-btn">Buy now</button>
+        </div>
+      </div>
     </div>
   </div>
 </header>

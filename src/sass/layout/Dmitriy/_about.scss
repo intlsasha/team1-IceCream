@@ -38,7 +38,7 @@
 .milk-button {
   width: 176px;
   height: 44px;
-  background: $txt-white;
+  background: $txt-white url('../images/button-icon-pink.svg') no-repeat 143px;
   border-radius: 22px;
   font-family: DM Sans;
   font-style: normal;
@@ -47,76 +47,100 @@
   line-height: 21px;
   color: $primary-color;
   border-color: transparent;
+  margin: 0;
+  transition: all 250ms ease-in-out;
   &:hover {
+    box-shadow: 0px 8px 30px rgb(212 20 67 / 30%);
     background-color: #ecebeb;
   }
 }
-.cow-button {
-  width: 10px;
-  height: 10px;
-  fill: $primary-color;
+.cow {
+  padding-top: 125px;
+  padding-bottom: 39px;
+  background-image: url('../images/about/about-bg-desk.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 100%;
 }
-
-.mobile {
-  width: 280px;
+.milk-before-title {
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 15px;
 }
-.tab {
-  width: 340px;
-  margin-right: 17px;
+.milk-title {
+  font-size: 34px;
+  line-height: 39px;
+  margin-bottom: 26px;
 }
-.desk {
-  margin-right: 74px;
-  width: 516px;
+.first-of-article {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  margin: 0;
+  margin-bottom: 47px;
 }
-@media screen and (max-width: 786px) {
-  .tab {
-    display: none;
-  }
+.second-of-article {
+  font-size: 12px;
+  line-height: 162%;
+  margin: 0;
+  margin-bottom: 17px;
 }
-@media screen and (max-width: 1280px) {
-  .desk {
-    display: none;
+@media screen and (min-width: 768px) {
+  .milk-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (min-width: 320px) {
+  .cow-photo {
+    margin: 0;
+    margin-right: 17px;
+  }
   .cow {
-    padding-top: 125px;
-    padding-bottom: 39px;
-    background-image: url('../images/about/about-bg-desk.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-y: 90%;
+    background-image: none;
+  }
+  .cow {
+    padding-top: 130px;
+    padding-bottom: 66px;
+  }
+  .milk-text {
+    min-width: 220px;
+    margin-top: 50px;
   }
   .milk-before-title {
     font-size: 18px;
     line-height: 21px;
+    margin-bottom: 16px;
   }
   .milk-title {
     font-size: 34px;
     line-height: 39px;
-    margin-top: 15px;
-    margin-bottom: 26px;
+    margin-bottom: 50px;
   }
   .first-of-article {
+    display: inline-block;
+    font-weight: 500;
     font-size: 12px;
     line-height: 162%;
     margin: 0;
-    margin-bottom: 47px;
+    margin-bottom: 49px;
   }
   .second-of-article {
+    display: inline-block;
     font-size: 12px;
     line-height: 162%;
     margin: 0;
-    margin-bottom: 17px;
+    margin-bottom: 62px;
   }
 }
-
 @media screen and (min-width: 768px) {
+  .photo-cow {
+    margin: 0;
+    margin-right: 17px;
+  }
   .cow {
     background-image: none;
-  }
-  .mobile {
-    display: none;
   }
   .milk-info {
     display: flex;
@@ -125,22 +149,26 @@
     padding-top: 130px;
     padding-bottom: 66px;
   }
+  .milk-text {
+    width: 340px;
+    margin-top: 50px;
+  }
   .milk-before-title {
     font-size: 26px;
     line-height: 30px;
+    margin-bottom: 16px;
   }
   .milk-title {
     font-size: 48px;
     line-height: 55px;
-    margin-top: 16px;
     margin-bottom: 50px;
   }
   .first-of-article {
-    font-size: 12px;
-    line-height: 162%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 176%;
     margin: 0;
     margin-bottom: 49px;
-    margin-top: 50px;
   }
   .second-of-article {
     font-size: 12px;
@@ -152,12 +180,15 @@
 @media screen and (min-width: 1280px) {
   .cow {
     background-image: url('../images/about/about-bg-desk.png');
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position-y: bottom;
+    background-position-y: 100%;
   }
-  .tab {
-    display: none;
+  .photo-cow {
+    margin-right: 74px;
+  }
+  .milk-text {
+    width: 463px;
   }
   .milk-info {
     display: flex;
@@ -173,15 +204,15 @@
   .milk-title {
     font-size: 58px;
     line-height: 66px;
-    margin-top: 15px;
     margin-bottom: 50px;
   }
   .first-of-article {
+    font-weight: 500;
+    letter-spacing: 0.04em;
     font-size: 16px;
     line-height: 176%;
     margin: 0;
     margin-bottom: 49px;
-    margin-top: 50px;
   }
   .second-of-article {
     font-size: 14px;
