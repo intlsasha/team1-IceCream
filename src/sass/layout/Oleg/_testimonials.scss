@@ -55,6 +55,7 @@ padding-top: 121px;
     height: 85px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 62px;
 }
 .section-reviews__wrap::before {
     content: "";
@@ -64,14 +65,14 @@ background-image: url(../images/quotation-mark.svg);
     height: 40px;
     z-index: 1;
     left: 61px;
-    top: 28px;
+    top: 173px;
     @media screen and (min-width: 768px) {
         left: 41px;
-        top: 30px;
+        top: 177px;
     }
     @media screen and (min-width: 1280px) {
         left: 58px;
-        top: 30px;
+        top: 178px;
     }
    }
    .section-reviews__wrap{
