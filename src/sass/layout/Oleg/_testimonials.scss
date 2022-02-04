@@ -40,6 +40,8 @@ padding-top: 121px;
     font-size: 14px;
     line-height: 1.86;
     color: $txt-black;
+    margin-top: 47px;
+    margin-bottom: 35px;
     @media screen and (min-width: 768px) {
         font-size: 16px;
     }
@@ -86,4 +88,30 @@ background-image: url(../images/quotation-mark.svg);
         margin-left: 5%;
     }
    }
-  
+   .swiper-button-next{
+       display: none;
+   }
+   .swiper-button-prev{
+    display: none;
+}
+.section-reviews__text-info::before{
+content: "";
+background-image: url(../images/dots-slider.svg);
+fill: #C7133E;
+width: 32px;
+height: 4px;
+display: block;
+margin: 0 auto;
+margin-bottom: 15px;
+}
+  .swiper-pagination-bullet-active{
+      background-image: url(../images/slider-icon.svg);
+      fill: #C7133E;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 12px;
+      height: 12px;
+      border-radius: 0;
+      background-color: transparent;
+  }
