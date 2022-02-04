@@ -1,7 +1,3 @@
-.container {
-  // padding-right: 20px;
-  // padding-left: 20px;
-}
 .cow {
   background-color: $bg-pink-light;
 }
@@ -124,6 +120,7 @@
     margin-bottom: 50px;
   }
   .first-of-article {
+    display: inline-block;
     font-weight: 500;
     font-size: 12px;
     line-height: 162%;
@@ -131,6 +128,7 @@
     margin-bottom: 49px;
   }
   .second-of-article {
+    display: inline-block;
     font-size: 12px;
     line-height: 162%;
     margin: 0;
