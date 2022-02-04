@@ -2,7 +2,7 @@
   padding-top: 190px;
   padding-bottom: 160px;
   background-color: $bg-pink-dark;
-  z-index: 1;
+  // z-index: 1;
   overflow: hidden;
   @media screen and (min-width: 768px) {
     padding-top: 97px;
@@ -23,6 +23,7 @@
 }
 
 .hero-title {
+  z-index: 1;
   margin-bottom: 19px;
   font-family: Titan One;
   font-weight: normal;
@@ -32,7 +33,6 @@
   text-transform: uppercase;
   color: $txt-white;
   position: relative;
-  z-index: 3;
   @media screen and (min-width: 768px) {
     font-size: 22px;
     line-height: 1.14;
@@ -60,9 +60,9 @@
 }
 
 .hero-btn-container {
+  z-index: 1;
   display: flex;
   position: relative;
-  z-index: 3;
 }
 
 .hero-btn-products {
@@ -75,10 +75,12 @@
   font-size: 8px;
   line-height: 1.25;
   color: $txt-white;
-  transition: background-color 250ms ease-in-out;
+  box-shadow: none;
+  transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out;
   &:hover,
   &:focus {
     background-color: #c7133e;
+    box-shadow: 0px 12px 30px rgba(212, 20, 67, 0.3);
   }
   @media screen and (min-width: 1280px) {
     font-size: 14px;
@@ -95,10 +97,12 @@
   font-size: 8px;
   line-height: 1.25;
   color: $primary-color;
-  transition: background-color 250ms ease-in-out;
+  box-shadow: none;
+  transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out;
   &:hover,
   &:focus {
     background-color: $secondary-button-hover;
+    box-shadow: 0px 12px 30px rgba(212, 20, 67, 0.3);
   }
   @media screen and (min-width: 1280px) {
     font-size: 14px;
@@ -114,7 +118,6 @@
   background-color: #ffa5ba;
   top: -128px;
   right: -20%;
-  // z-index: 1;
   @media screen and (min-width: 768px) {
     top: -62px;
     right: 102px;
@@ -133,7 +136,6 @@
   position: absolute;
   bottom: -100px;
   left: 82px;
-  z-index: 2;
   pointer-events: none;
   @media screen and (min-width: 768px) {
     bottom: -45px;
@@ -219,7 +221,6 @@
     position: absolute;
     bottom: -28px;
     right: 0;
-    z-index: 2;
   }
   @media screen and (min-width: 1280px) {
     bottom: -45px;
@@ -235,7 +236,6 @@
     position: absolute;
     right: 0px;
     top: 0px;
-    z-index: 2;
   }
 }
 
@@ -262,7 +262,6 @@
   position: absolute;
   right: -8px;
   top: -5px;
-  z-index: -1;
   @media screen and (min-width: 1280px) {
     width: 30px;
     height: 30px;
@@ -307,7 +306,6 @@
   position: absolute;
   right: -8px;
   top: -5px;
-  z-index: -1;
   @media screen and (min-width: 1280px) {
     width: 30px;
     height: 30px;
