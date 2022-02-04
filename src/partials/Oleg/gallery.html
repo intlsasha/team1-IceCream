@@ -1,9 +1,19 @@
-<section id="gallery" class="section-gallery">
-  <div class="container">
-    <picture>
-      <img src="./images/gallery/gallery-mob.png" class="section-gallery__img-mob" />
-      <img src="./images/gallery/gallery-tab.png" class="section-gallery__img-tab" />
-      <img src="./images/gallery/gallery-desk.png" class="section-gallery__img-desk" />
-    </picture>
-  </div>
+<section class="section-gallery">
+    <div class="container">
+         <picture>
+          <source srcset="./images/gallery/gallery-desk.png 1x , ./images/gallery/gallery-desk@2x.png 2x"
+            media="(min-width: 1280px)">
+         <img src="./images/gallery/gallery-desk.png" class="section-gallery__img-desk"> 
+        </picture>
+        <picture>
+            <source srcset="./images/gallery/gallery-tab.png 1x , ./images/gallery/gallery-tab@2x.png 2x"
+            media="(min-width: 768px)">
+         <img src="./images/gallery/gallery-tab.png" class="section-gallery__img-tab"> 
+        </picture>
+        <picture>
+         <source srcset="./images/gallery/gallery-mob.png 1x , ./images/gallery/gallery-mob@2x.png 2x"
+    media="(min-width: 320px)">
+    <img src="./images/gallery/gallery-mob.png" class="section-gallery__img-mob"> 
+        </picture>
+    </div>
 </section>
