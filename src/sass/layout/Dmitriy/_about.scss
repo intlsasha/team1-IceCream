@@ -1,3 +1,7 @@
+.container {
+  // padding-right: 20px;
+  // padding-left: 20px;
+}
 .cow {
   background-color: $bg-pink-light;
 }
@@ -54,59 +58,46 @@
     background-color: #ecebeb;
   }
 }
-.cow-button {
-  width: 10px;
-  height: 10px;
-  fill: $primary-color;
+.cow {
+  padding-top: 125px;
+  padding-bottom: 39px;
+  background-image: url('../images/about/about-bg-desk.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+}
+.milk-before-title {
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 15px;
+}
+.milk-title {
+  font-size: 34px;
+  line-height: 39px;
+  margin-bottom: 26px;
+}
+.first-of-article {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  margin: 0;
+  margin-bottom: 47px;
+}
+.second-of-article {
+  font-size: 12px;
+  line-height: 162%;
+  margin: 0;
+  margin-bottom: 17px;
 }
 @media screen and (max-width: 768px) {
-  .tab {
-    display: none;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .desk {
-    display: none;
+  .milk-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (min-width: 320px) {
-  .cow-photo {
-    margin-bottom: 46px;
-  }
-  .cow {
-    padding-top: 125px;
-    padding-bottom: 39px;
-    background-image: url('../images/about/about-bg-desk.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position-y: 100%;
-  }
-  .milk-before-title {
-    font-size: 18px;
-    line-height: 21px;
-    margin-bottom: 15px;
-  }
-  .milk-title {
-    font-size: 34px;
-    line-height: 39px;
-    margin-bottom: 26px;
-  }
-  .first-of-article {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 162%;
-    margin: 0;
-    margin-bottom: 47px;
-  }
-  .second-of-article {
-    font-size: 12px;
-    line-height: 162%;
-    margin: 0;
-    margin-bottom: 17px;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .cow-photo {
     margin: 0;
     margin-right: 17px;
@@ -114,11 +105,45 @@
   .cow {
     background-image: none;
   }
-  .tab {
-    width: 340px;
+  .cow {
+    padding-top: 130px;
+    padding-bottom: 66px;
   }
-  .mobile {
-    display: none;
+  .milk-text {
+    width: 220px;
+    margin-top: 50px;
+  }
+  .milk-before-title {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 16px;
+  }
+  .milk-title {
+    font-size: 34px;
+    line-height: 39px;
+    margin-bottom: 50px;
+  }
+  .first-of-article {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    margin: 0;
+    margin-bottom: 49px;
+  }
+  .second-of-article {
+    font-size: 12px;
+    line-height: 162%;
+    margin: 0;
+    margin-bottom: 62px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .photo-cow {
+    margin: 0;
+    margin-right: 17px;
+  }
+  .cow {
+    background-image: none;
   }
   .milk-info {
     display: flex;
@@ -128,6 +153,7 @@
     padding-bottom: 66px;
   }
   .milk-text {
+    width: 340px;
     margin-top: 50px;
   }
   .milk-before-title {
@@ -160,17 +186,12 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: 100%;
-
-    &-photo {
-      margin-right: 74px;
-    }
   }
-  .tab {
-    display: none;
+  .photo-cow {
+    margin-right: 74px;
   }
   .milk-text {
     width: 463px;
-    margin-top: 56px;
   }
   .milk-info {
     display: flex;
@@ -186,7 +207,6 @@
   .milk-title {
     font-size: 58px;
     line-height: 66px;
-    margin-top: 15px;
     margin-bottom: 50px;
   }
   .first-of-article {

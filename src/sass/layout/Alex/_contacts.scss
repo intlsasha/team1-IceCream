@@ -266,7 +266,6 @@
 .btn-location {
   color: $txt-white;
   background: $primary-button-color url(../images/button-icon-white.svg) no-repeat 143px;
-  box-shadow: none;
   transition: box-shadow 250ms ease-in-out;
 
   @media screen and (max-width: 767px) {
@@ -286,7 +285,7 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.3);
+    box-shadow: 0px 12px 30px rgba(212, 20, 67, 0.3);
   }
 }
 
@@ -294,7 +293,7 @@
   color: $primary-color;
   background: $txt-white url(../images/button-icon-pink.svg) no-repeat 143px;
 
-  transition: background 250ms ease-in-out;
+  transition: background 250ms ease-in-out, box-shadow 250ms ease-in-out;
 
   @media screen and (min-width: 768px) {
     width: 174px;
@@ -306,6 +305,7 @@
 
   &:hover,
   :focus {
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.3);
     background: $secondary-button-hover url(../images/button-icon-pink.svg) no-repeat 143px;
   }
 }
